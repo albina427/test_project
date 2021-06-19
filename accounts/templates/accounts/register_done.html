@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h4 class="">{{new_user.email}} зарегистрирован в системе. </h4>
+                <p><a href="{% url 'accounts:login' %}">Войдите</a>в систему по указаным данным при регистрации.</p>
+            </div>
+        </div>
+
+
+{% endblock %}
